@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --darkgray: #475467;
+    --borderColor: #d0d5dd;
+    --buttonBackground: #1570EF;
+}
+
+.contactMain{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    width: 50%;  
+    margin: 0 auto;
+    font-family: 'Inter';
+    
+}
+
+form {
+    width: 100%;
+}
+
+.contact-header {
+    padding-bottom: 30px;
+   
+}
+
+.contact-header h2 {
+    padding-bottom: 10px;
+     font-size: 30px;
+     font-weight: 600
+}
+
+.contact-header p {
+    color: var(--darkgray);
+}
+
+label {
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--darkgray);
+}
+
+input[type='text'], [type = 'email'] {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--borderColor);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 10px;
+}
+
+.fullName {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.check{
+ display: flex;
+ align-items: center;
+ gap: 10px ;
+ margin-bottom:20px;
+}
+
+.check label{
+ margin: 0;
+}
+
+.firstName,
+.lastName {
+    width: 50%;
+}
+
+.submit-btn {
+ width: 100%;
+ padding: 10px 0;
+ background-color: var(--buttonBackground);
+ color: #fff;
+ border: none;
+ font-weight: 500;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+@media  screen and (max-width: 426px) {
+ .main-container {
+  width: 100%;
+  padding: 50px 10px;
+ }
+
+ .fullName {
+  flex-direction: column;
+  gap: 0px ;
+ }
+
+ .firstName,
+.lastName {
+    width: 100%;
+}
+
+}

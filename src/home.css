@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{
+    --darkColor: #101828;
+    --btnBackground: #EAECF0
+}
+body{
+    font-family: "Inter";
+}
+
+#profile__img{
+  width: 60px;
+   border-radius: 50%;   
+}
+
+.home-header{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.home-header h1 {
+   margin-top: 10px;  
+   color:var(--darkColor);
+}
+
+.icon-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: -25px;
+  
+}
+
+.nav-icon {
+    width: 32px;
+}
+
+.bodyContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btnsContainer{
+    margin-bottom: 10px;
+}
+
+.icons-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+ margin-bottom: 100px;
+}
+
+.icons-wrapper img {
+    width: 20px;
+}
+
+.btn{
+    display: block;
+    padding: 24px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--darkColor);
+    background: var(--btnBackground);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #D0D5DD;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        width: 100%;
+    }
+
+    .icons-wrapper{
+        margin-bottom: 50px;
+    }
+
+    .nav-icon {
+        right: 0px;
+        content: url(https://s3-alpha-sig.figma.com/img/7876/4bec/9096a2bc48f018272bb7c1d9f4c1a146?Expires=1667779200&Signature=gEU0c11YsDElzJug0k3Brrs1P-qmAx79AdnrG3YMdP752wVaVz-La6OYMoPAsJ8p48kHf-NCWiL3Rjz8TGlmELbBMnaotsq7VaDdz8SDUxQ1j6pQ2k-3C0hBliJqQwD-DlhzW42MPtN-qTOdB~rgr9CNGqe3va3W-hBcpiach9vKFN8NGh7p-nJf6qi9ZidheE0jEVJIFh22CjAyr~mea~TS8RgveK3VZMHeH7BN4hJksW5KQ~~hLPNaQ1D9zEXjjokCy8OHYD61ezWB4siSk0-KcLfgj9A5BoenmNqbtNBVei1Kbfopf-PAU6hXLEDt~~wW3oeGxEMJgQf~howR2w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+        transform: scale(0.9);
+        
+    }
+    .btnsContainer {
+        padding: 10px;
+    }
+    .bodyContainer{
+        width: 100%;
+        padding: 10px;
+    }
+   
+}
